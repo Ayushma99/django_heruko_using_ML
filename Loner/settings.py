@@ -25,7 +25,7 @@ SECRET_KEY = '#@r6pkpix@zg%52uge0zymieya5$5d+lx$a_og3_spu3)0+n0&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS =['https://django-deploymentml.herokuapp.com/','.herokuapp.com' ]
+ALLOWED_HOSTS =['https://django-deploymentml.herokuapp.com/','*' ]
 
 CRISPY_TEMPLATE_PACK="bootstrap4"
 STATIC_URL="/static/"
@@ -95,16 +95,6 @@ WSGI_APPLICATION = 'Loner.wsgi.application'
 #     }
 # }
 
-DATABASES={
-'default':{
-'ENGINE':"django.db.backends.postgresql",
-'NAME':"db",
-'USER':"aayushma",
-'PASSWORD':"aayushma1",
-'HOST':"localhost",
-'PORT':"5432"
-}
-}
 
 
 
