@@ -25,14 +25,20 @@ SECRET_KEY = '#@r6pkpix@zg%52uge0zymieya5$5d+lx$a_og3_spu3)0+n0&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://django-deploymentml.herokuapp.com/','*']
+ALLOWED_HOSTS =['https://django-deploymentml.herokuapp.com/','.herokuapp.com' ]
+
 CRISPY_TEMPLATE_PACK="bootstrap4"
 STATIC_URL="/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'Myapi/static'),
 )
+=======
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, 'Myapi/static')
+# )
 
 # Application definition
 
